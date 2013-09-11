@@ -177,3 +177,10 @@ VirtualList.createScroller = function(h) {
 		addListen(doc.all);	
 	}
 })(window, document);
+
+
+if (!Date.now) {
+   Date.now = function() {
+	return new Date().getTime();
+}
+}
